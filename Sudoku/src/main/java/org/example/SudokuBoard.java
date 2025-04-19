@@ -27,7 +27,7 @@ public class SudokuBoard {
         return fixedCells[row][col];
     }
 
-    private boolean isValidMove(int row, int col, int value) {
+    boolean isValidMove(int row, int col, int value) {
         // Verifica se o valor já está na linha
         for (int i = 0; i < 9; i++) {
             if (board[row][i] == value) {
